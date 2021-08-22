@@ -1,0 +1,67 @@
+.user-info {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $gray2;
+  }
+}
+
+.user-info__item {
+  margin-bottom: 20px;
+}
+
+.user-info__label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  color: $darkGray;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
+}
+
+.user-info__input {
+  width: 192px;
+  height: 58px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  padding-left: 21px;
+
+  border: none;
+
+  background-color: $lightGray;
+  color: $black;
+
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::placeholder {
+    color: $black;
+    opacity: 1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 314px;
+  }
+}
+
+.user-info__input--large {
+  width: 230px;
+
+  @media (min-width: $tablet-width) {
+    width: 216px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 350px;
+  }
+}

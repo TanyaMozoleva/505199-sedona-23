@@ -1,0 +1,60 @@
+.gallery-card {
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.gallery-card__img {
+  display: block;
+}
+
+.gallery-card__inner {
+  @media (min-width: $tablet-width) {
+    background-color: $lightGray;
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 22px;
+  }
+}
+
+.gallery-card__title {
+  margin: 0;
+  padding-top: 10px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.gallery-card__text {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkGray;
+}
+
+.gallery-card__number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.gallery-card__likes {
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+  }
+}

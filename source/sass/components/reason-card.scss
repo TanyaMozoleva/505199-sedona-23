@@ -1,0 +1,107 @@
+.reason-card {
+
+  display: grid;
+  grid-template: column;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.reason-card--brief {
+  position: relative;
+
+  // doesn't work, can't romove last line //
+
+
+  // &:not(:last-child)::after {
+  //   content: "";
+  //   width: 280px;
+  //   height: 1px;
+
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 20px;
+
+  //   background-color: $gray4;
+  // }
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-color: $gray4;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 256px;
+    grid-template-columns: 1fr;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+
+.reason-card__description {
+  min-height: 211px;
+  padding-top: 55px;
+  padding-bottom: 39px;
+  background-color: $blue;
+  color: $white;
+}
+
+.reason-card--second .reason-card__description {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reason-card__inner {
+  margin-left: 18px;
+  margin-right: 20px;
+}
+
+.reason-card--brief .reason-card__description {
+  min-height: 167px;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  background-color: $gray;
+  color: $black;
+}
+
+.reason-card__title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason-card__number {
+  margin: 0;
+  margin-bottom: 20px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason-card__text {
+  margin: 0;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.reason-card__img {
+  display: block;
+}

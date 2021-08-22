@@ -1,1 +1,42 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "layout/page.scss";
+
+//Blocks
+@import "layout/page-body.scss";
+@import "layout/page-header.scss";
+@import "components/main-nav.scss";
+@import "components/cover.scss";
+@import "components/promo.scss";
+@import "components/main-slogan.scss";
+@import "components/reasons.scss";
+@import "components/reason-card.scss";
+@import "components/brief-reasons.scss";
+@import "components/benefits.scss";
+@import "components/offers.scss";
+@import "layout/page-footer.scss";
+@import "components/social.scss";
+@import "components/reviews.scss";
+@import "components/button.scss";
+@import "components/map.scss";
+//form
+
+@import "layout/form.scss";
+@import "components/intro.scss";
+@import "components/user-info.scss";
+@import "components/user-contacts.scss";
+@import "components/user-opinion.scss";
+@import "components/user-visited.scss";
+@import "components/user-message.scss";
+
+//catalog
+
+@import "components/gallery.scss";
+@import "components/gallery-card.scss";
+@import "components/video.scss";
+@import "components/toolbar.scss";
+

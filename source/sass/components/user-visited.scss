@@ -1,0 +1,64 @@
+.user-visited {
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.user-visited__list {
+  @media (min-width: $tablet-width) {
+    padding-left: 100px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.user-visited__item {
+  margin-bottom: 54px;
+}
+
+.user-visited__label {
+  padding-left: 68px;
+
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $black;
+
+  cursor: pointer;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+
+    width: 46px;
+    height: 46px;
+    border-radius: 3px;
+
+    background-color: $lightGray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 15px;
+
+    width: 23px;
+    height: 16px;
+
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+  }
+}

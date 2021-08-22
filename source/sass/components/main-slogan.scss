@@ -1,0 +1,39 @@
+.main-slogan__inner {
+  margin-left: 17px;
+  margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 124px;
+    margin-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 358px;
+    margin-right: 359px;
+  }
+}
+
+.main-slogan__title {
+  margin: 0;
+  margin-top: 32px;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.main-slogan__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}

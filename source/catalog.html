@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Седона/Каталог</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="page-body">
+    <div class="container">
+
+      <header class="page-header">
+        <a class="page-header__logo logo" href="#">
+          <picture>
+            <img class="logo__img" src="img/logotype-mobile.svg" srcset="img/logotype-mobile@2x.svg 2x" alt="Логотип">
+          </picture>
+        </a>
+
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTMLAcademy</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-main">
+        <section class="intro">
+          <picture class="intro__picture">
+            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+            <img class="intro__img" src="img/sedona.svg" alt="Седона">
+          </picture>
+        </section>
+        <h1 class="visually-hidden">Фото и видео Седоны</h1>
+
+        <section class="gallery">
+          <div class="gallery__inner">
+            <div class="gallery__description">
+              <h2 class="gallery__title">Фото и видео</h2>
+              <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
+            <ul class="gallery__list">
+              <li class="gallery__item gallery__item--1">
+                <article class="gallery-card">
+                  <picture class="gallery-card__picture">
+                    <source media="(min-width: 1200px)" srcset="img/vastness-desktop.jpg 1x, img/vastness-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/vastness-tablet.jpg 1x, img/vastness-tablet@2x.jpg 2x">
+                    <img class="gallery-card__img" src="img/vastness-mobile.jpg" srcset="img/vastness-mobile@2x.jpg 2x" alt="Неродные просторы">
+                  </picture>
+                  <div class="gallery-card__inner">
+                    <div class="gallery-card__description">
+                      <h2 class="gallery-card__title">Неродные просторы</h2>
+                      <p class="gallery-card__text">Автор фото: Борис</p>
+                    </div>
+                    <div class="gallery-card__likes">
+                      <button class="gallery-card__button"></button>
+                      <span class="gallery-card__number">1350</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="gallery__item gallery__item--2">
+                <article class="gallery-card">
+                  <picture class="gallery-card__picture">
+                    <source media="(min-width: 1200px)" srcset="img/greenery-desktop.jpg 1x, img/greenery-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/greenery-tablet.jpg 1x, img/greenery-tablet@2x.jpg 2x">
+                    <img class="gallery-card__img" src="img/greenery-mobile.jpg" srcset="img/greenery-mobile@2x.jpg 2x" alt="Местная растительность">
+                  </picture>
+                  <div class="gallery-card__inner">
+                    <div class="gallery-card__description">
+                      <h2 class="gallery-card__title">Местная растительность</h2>
+                      <p class="gallery-card__text">Автор фото: Сергей</p>
+                    </div>
+                    <div class="gallery-card__likes">
+                      <button class="gallery-card__button"></button>
+                      <span class="gallery-card__number">143</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="gallery__item gallery__item--3">
+                <article class="gallery-card">
+                  <picture class="gallery-card__picture">
+                    <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
+                    <img class="gallery-card__img" src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Север">
+                  </picture>
+                  <div class="gallery-card__inner">
+                    <div class="gallery-card__description">
+                      <h2 class="gallery-card__title">Дорога на Север</h2>
+                      <p class="gallery-card__text">Автор фото: Петр</p>
+                    </div>
+                    <div class="gallery-card__likes">
+                      <button class="gallery-card__button"></button>
+                      <span class="gallery-card__number">96</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+              <li class="gallery__item gallery__item--4">
+                <article class="gallery-card">
+                  <picture class="gallery-card__picture">
+                    <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+                    <img class="gallery-card__img" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                  </picture>
+                  <div class="gallery-card__inner">
+                    <div class="gallery-card__description">
+                      <h2 class="gallery-card__title">Мост Дьявола</h2>
+                      <p class="gallery-card__text">Автор фото: Антон</p>
+                    </div>
+                    <div class="gallery-card__likes">
+                      <button class="gallery-card__button"></button>
+                      <span class="gallery-card__number">254</span>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="video">
+          <div class="video__description">
+            <h2 class="video__title">Все еще сомневаетесь?</h2>
+            <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          </div>
+          <div class="video__content">
+            <picture class="video__picture">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Указатель въезда в Седону">
+            </picture>
+
+            <div class="video__toolbar toolbar">
+              <div class="toolbar__timeline">
+                <div class="toolbar__time-scale"></div>
+                <div class="toolbar__time-toggle" tabindex="0" style="right: 25%"></div>
+              </div>
+              <div class="toolbar__controls">
+                <button class="video__reload" type="button">
+                  <span class="visually-hidden">Включить видео сначала</span>
+                </button>
+                <button class="video__subtitles" type="button">
+                  <span class="visually-hidden">Включить субтитры</span>
+                </button>
+                <button class="video__full-screen" type="button">
+                  <span class="visually-hidden">Раскрыть видео на весь экран</span>
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+
+      <footer class="page-footer">
+        <div class="page-footer__inner">
+          <a class="page-footer__tag" href="#">#visitsedona</a>
+
+          <section class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">vkontakte</span></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">instagram</span></a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+          </div>
+        </div>
+
+      </footer>
+
+      <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function () {
+          if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+          } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+          }
+        });
+
+      </script>
+    </div>
+  </body>
+</html>

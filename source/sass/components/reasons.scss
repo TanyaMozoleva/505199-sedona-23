@@ -1,0 +1,31 @@
+// .reasons__benefits {
+//   min-height: 416px;
+//   border: 1px solid $blue;
+//   display: grid;
+
+//   @media (min-width: $tablet-width) {
+//     min-height: 330px;
+//     grid-template-columns: 1fr 1fr 1fr;
+//   }
+// }
+
+.reasons__item--first {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    width: 768px;
+    height: 37px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../../img/white-plank-mobile.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

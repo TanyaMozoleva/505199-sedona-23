@@ -1,0 +1,57 @@
+.offers__inner {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 33px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 155px;
+    padding-left: 155px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 371px;
+    padding-left: 371px;
+    padding-bottom: 66px;
+  }
+}
+
+.offers__title {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offers__text {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 27px;
+
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $darkGray;
+}
+
+.offers__button {
+  display: block;
+  width: 100%;
+  min-height: 58px;
+  padding-top: 15px;
+
+  // background-color: $blue;
+  // color: $white;
+
+  // font-weight: 700;
+  // font-size: 21px;
+  // line-height: 26px;
+  // text-transform: uppercase;
+  // text-align: center;
+}

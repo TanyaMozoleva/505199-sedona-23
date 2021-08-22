@@ -1,0 +1,43 @@
+body {
+  font-family: "Pt Sans", "Open Sans", sans-serif;
+  min-width: 320px;
+}
+
+ul {
+  @include list-reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

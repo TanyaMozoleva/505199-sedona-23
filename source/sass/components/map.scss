@@ -1,0 +1,26 @@
+.map {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background-color: $blue2;
+    border: 5px solid $white;
+
+    position: absolute;
+    top: 161px;
+    left: 146px;
+
+    @media (min-width: $tablet-width) {
+      top: 164px;
+      left: 370px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 162px;
+      left: 586px;
+    }
+  }
+}

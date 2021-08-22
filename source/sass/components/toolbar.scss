@@ -1,0 +1,42 @@
+.toolbar {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  bottom: -66px;
+}
+
+.toolbar__timeline {
+  min-height: 45px;
+  min-width: 280px;
+  background-color: $black;
+  opacity: 60%;
+
+  position: relative;
+}
+
+.toolbar__time-scale {
+  width: 235px;
+  height: 3px;
+  background-color: $white;
+  opacity: 20%;
+
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
+.toolbar__time-toggle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  top: 17px;
+  left: 56px;
+}
+
+.toolbar__controls {
+  min-height: 66px;
+  min-width: 280px;
+  background-color: $lightGray;
+}
