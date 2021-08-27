@@ -1,8 +1,9 @@
 .toolbar {
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 100%;
+  height: 111px;
   position: absolute;
   bottom: -66px;
+  left: 0;
 }
 
 .toolbar__timeline {
@@ -15,14 +16,27 @@
 }
 
 .toolbar__time-scale {
-  width: 235px;
+  width: 280px;
   height: 3px;
   background-color: $white;
   opacity: 20%;
+  padding-left: 22px;
 
   position: absolute;
   top: 22px;
   left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+
+    left: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+
+    left: 93px;
+  }
 }
 
 .toolbar__time-toggle {
@@ -33,6 +47,14 @@
   position: absolute;
   top: 17px;
   left: 56px;
+
+  @media (min-width: $tablet-width) {
+    left: 204px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 204px;
+  }
 }
 
 .toolbar__controls {

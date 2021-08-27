@@ -1,4 +1,5 @@
 .reason-card {
+  background-color: $blue;
 
   display: grid;
   grid-template: column;
@@ -11,7 +12,7 @@
 .reason-card--brief {
   position: relative;
 
-  // doesn't work, can't romove last line //
+  // doesnt work, cant remove last line //
 
 
   // &:not(:last-child)::after {
@@ -28,12 +29,12 @@
 
   &::after {
     content: "";
-    width: 280px;
+    width: 100%;
     height: 1px;
 
     position: absolute;
     bottom: 0;
-    left: 20px;
+    left: 0;
 
     background-color: $gray4;
   }
@@ -52,20 +53,31 @@
 .reason-card__description {
   min-height: 211px;
   padding-top: 55px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 39px;
   background-color: $blue;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 44px;
+    padding-left: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    padding-right: 52px;
+    padding-bottom: 57px;
+    padding-left: 53px;
+  }
 }
 
 .reason-card--second .reason-card__description {
   @media (min-width: $tablet-width) {
     order: 2;
   }
-}
-
-.reason-card__inner {
-  margin-left: 18px;
-  margin-right: 20px;
 }
 
 .reason-card--brief .reason-card__description {
@@ -76,13 +88,21 @@
   color: $black;
 }
 
+.reason-card--brief .reason-card__inner {
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 20px;
+
+  }
+}
+
 .reason-card__title {
   margin: 0;
   margin-bottom: 20px;
 
-  font-weight: 400;
+  font-weight: 700;
   font-size: 21px;
-  line-height: 15px;
+  line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -104,4 +124,5 @@
 
 .reason-card__img {
   display: block;
+  width: 100%;
 }

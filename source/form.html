@@ -10,14 +10,14 @@
     <div class="container">
 
       <header class="page-header">
-        <a class="page-header__logo logo" href="#">
+        <a class="page-header__logo logo" href="#" aria-label="Логотип">
           <picture>
-            <img class="logo__img" src="img/logotype-mobile.svg" srcset="img/logotype-mobile@2x.svg 2x" alt="Логотип">
+            <img class="logo__img" src="img/logotype-mobile.svg" alt="Логотип">
           </picture>
         </a>
 
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
@@ -28,21 +28,25 @@
       </header>
 
       <main class="page-main">
+
         <section class="intro">
-          <picture class="intro__picture">
-            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
-            <img class="intro__img" src="img/sedona.svg" alt="Седона">
-          </picture>
+          <div class="intro__inner">
+            <picture class="intro__picture">
+              <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+              <img class="intro__img" src="img/sedona.svg" alt="Седона">
+            </picture>
+          </div>
+          <div class="intro__description">
+            <h2 class="intro__title">Оставьте свой отзыв</h2>
+            <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+
         </section>
 
         <section class="reviews">
           <div class="reviews__inner">
             <h1 class="visually-hidden">Форма отзыва</h1>
-            <div class="reviews__description">
-              <h2 class="reviews__title">Оставьте свой отзыв</h2>
-              <p class="reviews__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-            </div>
             <form class="reviews__form form" action="https://echo.htmlacademy.ru" method="POST">
 
               <fieldset class="form__user-info user-info">
@@ -69,12 +73,12 @@
                   <li class="user-contacts__item">
                     <label class="user-contacts__label" for="tel">Контактный телефон*:</label>
                     <input class="user-contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
-                    <a class="user-contacts__tel" href="">tel</a>
+                    <div class="user-contacts__icon user-contacts__icon--tel" href="">tel</div>
                   </li>
                   <li class="user-contacts__item">
                     <label class="user-contacts__label" for="email">Электронная почта*:</label>
                     <input class="user-contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
-                    <a class="user-contacts__email" href="">email</a>
+                    <div class="user-contacts__icon user-contacts__icon--email" href="">email</div>
                   </li>
                 </ul>
               </fieldset>
@@ -128,15 +132,32 @@
 
               <fieldset class="form__user-message user-message">
                 <h2 class="form__subtitle form__subtitle--special">Опишите свои эмоции:</h2>
-                <textarea class="user-message__textarea">Опишите подробно все свои восторги</textarea>
+                <label>
+                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"></textarea>
+                </label>
               </fieldset>
 
-              <button class="form__button button" type="submit">Отправить отзыв</button>
+              <button class="form__button button" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
               <span class="form__note">* — обязательные поля</span>
 
             </form>
           </div>
         </section>
+
+        <div class="modal modal--failure">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button modal__button--failure button" type="button" aria-label="Ok">Ok</button>
+        </div>
+        <div class="modal modal--success">
+          <div class="modal__inner">
+            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal__controls">
+            <button class="modal__button modal__button--success button" type="button" aria-label="Закрыть окно">Закрыть окно</button>
+          </div>
+        </div>
       </main>
 
 
@@ -148,13 +169,13 @@
           <section class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
+                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук"><span class="visually-hidden">facebook</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">vkontakte</span></a>
+                <a class="social__link social__link--vkontakte" href="#" aria-label="Вконтакте"><span class="visually-hidden">vkontakte</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">instagram</span></a>
+                <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">instagram</span></a>
               </li>
             </ul>
           </section>

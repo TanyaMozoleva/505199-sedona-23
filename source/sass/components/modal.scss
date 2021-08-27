@@ -1,0 +1,168 @@
+.modal {
+  display: none;
+  background-color: $white;
+  text-transform: uppercase;
+  text-align: center;
+
+  box-shadow: 0 7px 15px $modal-shadow;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__text {
+  margin-bottom: 22px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkGray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.modal__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.modal__button--failure {
+  min-width: 180px;
+  min-height: 58px;
+  padding-top: 18px;
+  padding-right: 64px;
+  padding-bottom: 14px;
+  padding-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 272px;
+  }
+}
+
+.modal--failure {
+  min-width: 320px;
+  min-height: 280px;
+
+  position: absolute;
+  top: 116px;
+  left: 0;
+
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 42px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 400px;
+    min-height: 347px;
+
+    top: 209px;
+    left: 184px;
+
+    padding-top: 52px;
+    padding-left: 46px;
+    padding-right: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 223px;
+    left: 440px;
+
+    padding-top: 50px;
+  }
+}
+
+.modal--success {
+  min-width: 320px;
+  min-height: 323px;
+
+  position: absolute;
+  top: 117px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 640px;
+    min-height: 347px;
+
+    top: 162px;
+    left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 94px;
+    left: 319px;
+  }
+}
+
+.modal__inner {
+  padding-top: 38px;
+  padding-right: 37px;
+  padding-left: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-right: 97px;
+    padding-left: 99px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+}
+
+.modal__controls {
+  min-height: 98px;
+  margin-top: 35px;
+
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: $lightGray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-right: 91px;
+    padding-bottom: 44px;
+    padding-left: 91px;
+  }
+}
+
+.modal__button--success {
+  width: 280px;
+  height: 58px;
+
+  padding-top: 18px;
+  padding-right: 62px;
+  padding-bottom: 14px;
+  padding-left: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+
+    padding-right: 140px;
+    padding-left: 139px;
+  }
+}

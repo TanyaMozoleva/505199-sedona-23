@@ -1,8 +1,14 @@
 .intro {
+  margin-bottom: 40px;
+}
+
+.intro__inner {
   overflow: hidden;
   position: relative;
   min-height: 158px;
+  background-color: $blue-hover;
   background-image: url("../../img/back-intro-mobile.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -20,6 +26,8 @@
     left: 0;
 
     background-image: url("../../img/intro-triangle.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       background-image: url("../../img/intro-triangle-tablet.svg");
@@ -37,6 +45,7 @@
   @media (min-width: $tablet-width) {
     min-height: 290px;
     background-image: url("../../img/back-intro-tablet.jpg");
+    background-size: 100%;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -61,6 +70,7 @@
 }
 
 .intro__img {
+  width: 100%;
   padding-top: 52px;
   padding-right: 45px;
   padding-left: 45px;
@@ -76,4 +86,46 @@
     padding-left: 370px;
     padding-right: 370px;
   }
+}
+
+.intro__description {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 166px;
+    padding-right: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 382px;
+    padding-right: 384px;
+  }
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.intro__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  color: $darkGray;
 }

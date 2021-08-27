@@ -29,7 +29,7 @@
 }
 
 .user-contacts__input {
-  width: 280px;
+  width: 100%;
   height: 58px;
   padding-top: 18px;
   padding-bottom: 14px;
@@ -55,12 +55,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 257px;
+    width: 43%;
   }
 }
 
-.user-contacts__tel,
-.user-contacts__email {
+.user-contacts__icon {
   width: 58px;
   height: 58px;
   padding: 20px;
@@ -74,6 +73,13 @@
 
   @media (min-width: $desktop-width) {
     right: 55px;
+    top: 0;
+  }
+}
+
+.user-contacts__icon--email {
+  @media (min-width: $desktop-width) {
+    right: 64px;
     top: 0;
   }
 }

@@ -1,10 +1,3 @@
-
-// form__user-info
-// form__user-contacts
-// form__user-opinion
-// form__user-visited
-// form__user-message
-
 .form {
   display: grid;
 
@@ -25,7 +18,7 @@
     background-color: $gray5;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -22px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -50,7 +43,7 @@
     background-color: $gray5;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -22px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -75,7 +68,7 @@
     background-color: $gray5;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -22px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -101,7 +94,7 @@
     background-color: $gray5;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -22px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -127,7 +120,7 @@
     background-color: $gray5;
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -22px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -166,7 +159,7 @@
       overflow: hidden;
       width: 50%;
       height: 1px;
-      content: '\a0';
+      content: "\a0";
       background-color: $gray2;
     }
 

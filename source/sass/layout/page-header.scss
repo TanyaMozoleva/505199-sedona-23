@@ -1,24 +1,3 @@
 .page-header {
   background-color: $white;
 }
-
-// .page-header__cover {
-//   min-height: 389px;
-//   width: 100%;
-//   background-image: url('../../img/text-index.svg'), url('../../img/intro-triangle.svg'), url('../../img/back-mobile.jpg');
-//   background-repeat: no-repeat, no-repeat, no-repeat;
-//   background-position: 50% 75px, bottom 0 left 0, top 0 left 50%;
-
-//   // @media (min-resolution: 2dppx) {
-//   //   background-image: url('../../img/text-index@2x.svg'), url('../../img/intro-triangle@2x.svg'), url('../../img/back-mobile@2x.jpg');
-//   //   background-repeat: no-repeat, no-repeat, no-repeat;
-//   //   background-position: 50% 75px, bottom 0 left 0, top 0 left 50%;
-//   // }
-
-//   @media (min-width: $tablet-width) {
-//     min-height: 518px;
-//     background-image: url('../../img/back-desktop@2x.jpg');
-//     background-repeat: no-repeat;
-//     background-position: top 10% left 80%;
-//   }
-// }

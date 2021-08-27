@@ -1,6 +1,7 @@
 body {
-  font-family: "Pt Sans", "Open Sans", sans-serif;
+  font-family: "Pt Sans", "Arial", sans-serif;
   min-width: 320px;
+  background-color: $gray6;
 }
 
 ul {
@@ -21,6 +22,7 @@ textarea {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  background-color: $white;
 }
 
 .visually-hidden {

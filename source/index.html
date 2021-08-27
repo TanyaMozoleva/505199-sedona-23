@@ -10,16 +10,18 @@
     <div class="container">
 
       <header class="page-header">
-        <a class="page-header__logo logo" href="#">
+        <a class="page-header__logo logo" href="#" aria-label="Логотип">
           <picture>
-            <img class="logo__img" src="img/logotype-mobile.svg" srcset="img/logotype-mobile@2x.svg 2x" alt="Логотип">
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
+            <img class="logo__img" src="img/logotype-mobile.svg" alt="Логотип">
           </picture>
         </a>
 
         <nav class="main-nav main-nav--closed main-nav--nojs">
 
           <div class="main-nav__dropdown">
-            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
           </div>
 
           <ul class="main-nav__list">
@@ -33,21 +35,20 @@
 
       <main class="page-main">
         <section class="promo">
-          <picture class="promo__picture">
-            <source media="(min-width: 1200px)" srcset="img/text-index-tablet.svg">
-            <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
-            <img class="promo__img" src="img/text-index.svg" alt="Название">
-          </picture>
+          <div class="promo__inner">
+            <picture class="promo__picture">
+              <source media="(min-width: 1200px)" srcset="img/text-index-tablet.svg">
+              <source media="(min-width: 768px)" srcset="img/text-index-tablet.svg">
+              <img class="promo__img" src="img/text-index.svg" alt="Название">
+            </picture>
+          </div>
+          <div class="promo__description">
+            <h2 class="promo__title">Седона — небольшой городок в Аризоне, заслуживающего большего</h2>
+            <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
         </section>
 
         <h1 class="visually-hidden">Седона</h1>
-
-        <section class="main-slogan">
-          <div class="main-slogan__inner">
-            <h2 class="main-slogan__title">Седона — небольшой городок в Аризоне, заслуживающего большего</h2>
-            <p class="main-slogan__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          </div>
-        </section>
 
         <section class="reasons">
           <ul class="reasons__list">
@@ -148,7 +149,7 @@
           <div class="offers__inner">
             <h2 class="offers__title">Заинтересовались?</h2>
             <p class="offers__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшиепредложения гостиниц в седоне</p>
-            <a class="offers__button button" href="#">Найти гостиницу</a>
+            <a class="offers__button button" aria-label="Найти гостиницу" href="#">Найти гостиницу</a>
           </div>
         </section>
 
@@ -170,13 +171,13 @@
           <section class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
-                <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
+                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук"><span class="visually-hidden">facebook</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">vkontakte</span></a>
+                <a class="social__link social__link--vkontakte" href="#" aria-label="Вконтакте"><span class="visually-hidden">vkontakte</span></a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">instagram</span></a>
+                <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"><span class="visually-hidden">instagram</span></a>
               </li>
             </ul>
           </section>
