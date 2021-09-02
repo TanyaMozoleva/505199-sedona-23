@@ -1,6 +1,7 @@
 .benefits {
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 30px;
 
   min-height: 416px;
   display: grid;
@@ -12,5 +13,109 @@
 }
 
 .benefits__item {
-  text-align: center;
+  padding-left: 50px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 158px;
+    padding-bottom: 60px;
+  }
+}
+
+.benefits__item--accommodation {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      left: 100px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 175px;
+    }
+  }
+}
+
+.benefits__item--presents {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      left: 100px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 175px;
+    }
+  }
+}
+
+.benefits__item--food {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 60px;
+      left: 100px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 175px;
+    }
+  }
+}
+
+.benefits__title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $darkGray;
 }

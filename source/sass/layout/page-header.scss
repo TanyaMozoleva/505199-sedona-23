@@ -1,3 +1,15 @@
 .page-header {
   background-color: $white;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 61px);
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    z-index: 4;
+  }
 }

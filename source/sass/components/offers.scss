@@ -46,12 +46,25 @@
   min-height: 58px;
   padding-top: 15px;
 
-  // background-color: $blue;
-  // color: $white;
+  background-color: $blue;
+  color: $white;
 
-  // font-weight: 700;
-  // font-size: 21px;
-  // line-height: 26px;
-  // text-transform: uppercase;
-  // text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+    color: $white-opacity3;
+  }
+
+  &:disabled {
+    background-color: $gray5;
+  }
 }

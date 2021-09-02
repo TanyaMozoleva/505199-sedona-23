@@ -1,0 +1,19 @@
+.copyright__text {
+  padding-right: 5px;
+}
+
+.copyright__link {
+  padding-top: 10px;
+}
+
+.copyright__icon {
+  color: $black;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $black-opacity3;
+  }
+}

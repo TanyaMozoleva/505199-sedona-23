@@ -77,7 +77,17 @@
   }
 }
 
+.user-contacts__icon--tel {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .user-contacts__icon--email {
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
   @media (min-width: $desktop-width) {
     right: 64px;
     top: 0;

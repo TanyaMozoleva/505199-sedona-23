@@ -17,4 +17,44 @@
   position: relative;
 
   background-color: $blue;
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+}
+
+.social__link--twitter {
+  padding-top: 16px;
+  padding-right: 14px;
+  padding-bottom: 17px;
+  padding-left: 14px;
+}
+
+.social__link--facebook {
+  padding-top: 12px;
+  padding-right: 19px;
+  padding-bottom: 17px;
+  padding-left: 19px;
+}
+
+.social__link--youtube {
+  padding-top: 17px;
+  padding-right: 13px;
+  padding-bottom: 17px;
+  padding-left: 13px;
+}
+
+.social__icon {
+  color: $white;
+  text-align: center;
+}
+
+.social__link .social__icon {
+  &:active {
+    color: $white-opacity3;
+  }
 }
