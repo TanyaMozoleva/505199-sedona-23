@@ -15,8 +15,6 @@
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
             <img class="logo__img" src="img/logotype-mobile.svg" alt="Логотип">
-          </picture>
-        </a>
 
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
@@ -91,17 +89,20 @@
                 <ul class="user-opinion__list">
                   <li class="user-opinion__item">
                     <label class="user-opinion__label">
-                      <input class="user-opinion__input visually-hidden" type="radio" name="Мнение пользователя" value="Скорее положительное" checked>Скорее положительное
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="positive" checked>
+                      <span>Скорее положительное</span>
                     </label>
                   </li>
                   <li class="user-opinion__item">
                     <label class="user-opinion__label">
-                      <input class="user-opinion__input visually-hidden" type="radio" name="Мнение пользователя" value="Скорее отрицательное">Скорее отрицательное
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="negative">
+                      <span>Скорее отрицательное</span>
                     </label>
                   </li>
                   <li class="user-opinion__item">
                     <label class="user-opinion__label">
-                      <input class="user-opinion__input visually-hidden" type="radio" name="Мнение пользователя" value="Затрудняюсь ответить">Затрудняюсь ответить
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="indecisive">
+                      <span>Затрудняюсь ответить</span>
                     </label>
                   </li>
                 </ul>
