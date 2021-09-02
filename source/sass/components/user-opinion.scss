@@ -49,28 +49,28 @@
 }
 
 
-// .user-opinion__input + .user-opinion__label::before {
-//   content: "";
-//   position: absolute;
-//   top: -10px;
-//   left: 0;
+.user-opinion__input + .user-opinion__label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
 
-//   width: 48px;
-//   height: 48px;
-//   border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
 
-//   background-color: $lightGray;
-// }
+  background-color: $lightGray;
+}
 
-// .user-opinion__input:checked + .user-opinion__label::after {
-//   content: "";
-//   position: absolute;
-//   top: 4px;
-//   left: 15px;
+.user-opinion__input:checked + .user-opinion__label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 15px;
 
-//   width: 18px;
-//   height: 18px;
-//   border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
 
-//   background-color: $darkGray;
-// }
+  background-color: $darkGray;
+}
