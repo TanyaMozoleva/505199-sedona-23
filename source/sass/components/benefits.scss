@@ -157,6 +157,11 @@
 }
 
 .benefits__item--food .benefits__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 1px;
     padding-left: 46px;
@@ -165,6 +170,11 @@
 }
 
 .benefits__item--presents .benefits__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 1px;
     padding-left: 78px;

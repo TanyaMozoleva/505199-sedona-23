@@ -1,6 +1,10 @@
 .page-footer {
   min-height: 233px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-height: 120px;
+  }
 }
 
 .page-footer__inner {
