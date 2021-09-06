@@ -18,8 +18,9 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    padding-top: 158px;
-    padding-bottom: 60px;
+    padding-top: 111px;
+    padding-left: 0;
+    // padding-bottom: 60px;
   }
 }
 
@@ -35,16 +36,22 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 60px;
-      left: 100px;
+      top: 32px;
+      left: 69px;
       width: 75px;
       height: 75px;
       background-size: 75px 72px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 175px;
+      left: 139px;
+      top: 29px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
@@ -60,16 +67,21 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 60px;
-      left: 100px;
+      top: 29px;
+      left: 96px;
       width: 75px;
       height: 75px;
       background-size: 75px 72px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 175px;
+      left: 167px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
   }
 }
 
@@ -85,16 +97,21 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      top: 60px;
-      left: 100px;
+      top: 31px;
+      left: 81px;
       width: 75px;
       height: 75px;
       background-size: 75px 72px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 175px;
+      left: 154px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
   }
 }
 
@@ -109,6 +126,7 @@
   @media (min-width: $tablet-width) {
     font-size: 21px;
     line-height: 26px;
+    margin-bottom: 22px;
   }
 }
 
@@ -118,4 +136,38 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $darkGray;
+}
+
+.benefits__item--accommodation .benefits__title {
+  padding-left: 20px;
+  padding-right: 48px;
+}
+
+.benefits__item--presents .benefits__title {
+  padding-left: 70px;
+  padding-right: 44px;
+}
+
+.benefits__item--accommodation .benefits__text {
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+    padding-left: 26px;
+    padding-right: 56px;
+  }
+}
+
+.benefits__item--food .benefits__text {
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+
+.benefits__item--presents .benefits__text {
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    padding-left: 78px;
+    padding-right: 78px;
+  }
 }

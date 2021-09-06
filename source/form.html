@@ -15,15 +15,19 @@
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
             <img class="logo__img" src="img/logotype-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
 
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__dropdown">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
-            <li class="main-nav__item main-nav__item--special"><a class="main-nav__link" href="#"></a></li>
-            <li class="main-nav__item"><a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTMLAcademy</a></li>
+            <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--3"><a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="https://htmlacademy.ru">HTMLAcademy</a></li>
           </ul>
         </nav>
       </header>
@@ -113,22 +117,26 @@
                 <ul class="user-visited__list">
                   <li class="user-visited__item">
                     <label class="user-visited__label">
-                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Мост Дьявола" checked>Мост Дьявола
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Мост Дьявола" checked>
+                      <span>Мост Дьявола</span>
                     </label>
                   </li>
                   <li class="user-visited__item">
                     <label class="user-visited__label">
-                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Гора-Колокол" checked>Гора-Колокол
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Гора-Колокол" checked>
+                      <span>Гора-Колокол</span>
                     </label>
                   </li>
                   <li class="user-visited__item">
                     <label class="user-visited__label">
-                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Слайд-парк" checked>Слайд-парк
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Слайд-парк" checked>
+                      <span>Слайд-парк</span>
                     </label>
                   </li>
                   <li class="user-visited__item">
                     <label class="user-visited__label">
-                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Красные скалы">Красные скалы
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Красные скалы">
+                      <span>Красные скалы</span>
                     </label>
                   </li>
                 </ul>

@@ -1,4 +1,5 @@
 .page-header {
+  min-height: 56px;
   background-color: $white;
   position: relative;
 }
@@ -11,5 +12,11 @@
 
   @media (min-width: $tablet-width) {
     z-index: 4;
+    left: calc(50% - 52px);
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 4;
+    left: calc(50% - 94px);
   }
 }

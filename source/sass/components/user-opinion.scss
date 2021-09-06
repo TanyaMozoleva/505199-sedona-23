@@ -102,22 +102,15 @@
   }
 }
 
- .user-opinion__label span {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 15px;
-
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-
-    background-color: $darkGray;
-  }
+.user-opinion__label span:hover::before {
+  background-color: $gray5;
 }
 
-.user-opinion__input:checked + .user-opinion__label span::after {
+.user-opinion__label span:active::before {
+  background-color: $gray7;
+}
+
+.user-opinion__input:checked + span::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -128,4 +121,13 @@
   border-radius: 50%;
 
   background-color: $darkGray;
+}
+
+.user-opinion__input:checked + span:hover::after {
+  background-color: $darkGray;
+}
+
+.user-opinion__input:checked + span:active::after {
+  background-color: $darkGray;
+  opacity: 30%;
 }

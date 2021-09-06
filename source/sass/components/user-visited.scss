@@ -23,7 +23,7 @@
   margin-bottom: 54px;
 }
 
-.user-visited__label {
+.user-visited__label span {
   padding-left: 68px;
 
   font-weight: 700px;
@@ -48,17 +48,29 @@
 
     background-color: $lightGray;
   }
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 15px;
+.user-visited__label span:hover::before {
+  background-color: $gray5;
+}
 
-    width: 23px;
-    height: 16px;
+.user-visited__label span:active::before {
+  background-color: $gray7;
+}
 
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-  }
+.user-visited__input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 15px;
+
+  width: 23px;
+  height: 16px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.user-visited__input:checked + span:active::after {
+  opacity: 30%;
 }
