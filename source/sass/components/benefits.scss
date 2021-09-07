@@ -139,13 +139,17 @@
 }
 
 .benefits__item--accommodation .benefits__title {
-  padding-left: 20px;
-  padding-right: 48px;
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 48px;
+  }
 }
 
 .benefits__item--presents .benefits__title {
-  padding-left: 70px;
-  padding-right: 44px;
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 44px;
+  }
 }
 
 .benefits__item--accommodation .benefits__text {

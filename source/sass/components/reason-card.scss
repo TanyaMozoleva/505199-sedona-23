@@ -5,55 +5,14 @@
   grid-template: column;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 256px 512px;
+    grid-template-columns: 2fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 400px 800px;
+    grid-template-columns: 1fr 2fr;
     height: 256px;
   }
 }
-
-.reason-card--brief {
-  position: relative;
-
-  // doesnt work, cant remove last line //
-
-
-  // &:not(:last-child)::after {
-  //   content: "";
-  //   width: 280px;
-  //   height: 1px;
-
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 20px;
-
-  //   background-color: $gray4;
-  // }
-
-  &::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    background-color: $gray4;
-  }
-
-  @media (min-width: $tablet-width) {
-    min-height: 256px;
-    grid-template-columns: 1fr;
-
-    &::after {
-      display: none;
-    }
-  }
-}
-
 
 .reason-card__description {
   min-height: 211px;
@@ -125,25 +84,6 @@
   }
 }
 
-// .reason-card--brief .reason-card__description {
-//   min-height: 167px;
-//   padding-top: 42px;
-//   padding-bottom: 24px;
-//   background-color: $gray;
-//   color: $black;
-
-//   @media (min-width: $tablet-width) {
-//     &:nth-child(1) {
-//       padding-left: 33px;
-//       padding-right: 34px;
-//     }
-
-//     &:nth-child(2) {
-//       padding-left: 46px;
-//       padding-right: 48px;
-//     }
-//   }
-// }
 .reason-card__title {
   margin: 0;
   margin-bottom: 20px;
