@@ -43,3 +43,11 @@ textarea {
 *::after {
   box-sizing: border-box;
 }
+
+.small-hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
