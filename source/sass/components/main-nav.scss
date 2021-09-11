@@ -2,7 +2,6 @@
   width: 100%;
 }
 
-
 .main-nav__list {
   width: 100%;
   text-align: center;
@@ -113,6 +112,7 @@
 
 .main-nav__item--4 {
   box-shadow: 0 1px 0 0 $black-opacity, inset 0 2px 0 0 $white-opacity;
+
   &::after {
     content: "";
     width: 100%;

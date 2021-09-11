@@ -42,6 +42,7 @@
   background-image: url("../img/back-intro-mobile.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: right 0 top -51px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-intro-mobile@2x.jpg");
@@ -58,6 +59,7 @@
     background-image: url("../img/back-intro-tablet.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: right 0 top -51px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-intro-tablet@2x.jpg");
@@ -77,6 +79,7 @@
     background-image: url("../img/back-intro-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 1200px;
+    background-position: right 0 top -46px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-intro-desktop@2x.jpg");
