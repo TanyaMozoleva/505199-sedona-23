@@ -21,13 +21,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    min-height: 93px;
+    min-height: 92px;
     padding-top: 45px;
   }
 }
 
 .toolbar__time-scale {
-  width: 280px;
+  width: 258px;
   height: 3px;
   background-color: $white;
   opacity: 20%;
@@ -52,12 +52,12 @@
 }
 
 .toolbar__time-toggle {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: $white;
   position: absolute;
-  top: 17px;
+  top: 18px;
   left: 56px;
 
   @media (min-width: $tablet-width) {
