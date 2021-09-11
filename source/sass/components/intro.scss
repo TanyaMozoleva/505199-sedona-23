@@ -1,5 +1,5 @@
 .intro {
-  margin-bottom: 40px;
+  margin-bottom: 9px;
   overflow: hidden;
   position: relative;
 
@@ -21,6 +21,7 @@
 
     @media (min-width: $tablet-width) {
       top: 233px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: $desktop-width) {
@@ -31,6 +32,12 @@
 
 .intro__inner {
   min-height: 158px;
+  margin-bottom: 36px;
+
+  padding-top: 52px;
+  padding-right: 45px;
+  padding-left: 45px;
+
   background-color: $blue-hover;
   background-image: url("../img/back-intro-mobile.jpg");
   background-size: 100%;
@@ -42,6 +49,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-top: 95px;
+    padding-left: 157px;
+    padding-right: 150px;
+    margin-bottom: 62px;
+
     min-height: 290px;
     background-image: url("../img/back-intro-tablet.jpg");
     background-size: 100%;
@@ -55,6 +67,11 @@
 
   @media (min-width: $desktop-width) {
     min-height: 301px;
+    padding-top: 100px;
+    padding-left: 370px;
+    padding-right: 370px;
+    margin-bottom: 112px;
+
     width: 100%;
 
     background-image: url("../img/back-intro-desktop.jpg");
@@ -70,20 +87,16 @@
 
 .intro__img {
   width: 100%;
-  padding-top: 52px;
-  padding-right: 45px;
-  padding-left: 45px;
+  height: 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 95px;
-    padding-left: 150px;
-    padding-right: 150px;
+    width: 457px;
+    height: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
-    padding-left: 370px;
-    padding-right: 370px;
+    width: 460px;
+    height: 80px;
   }
 }
 
@@ -93,24 +106,26 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 166px;
+    padding-left: 165px;
     padding-right: 168px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 382px;
+    padding-left: 381px;
     padding-right: 384px;
   }
 }
 
 .intro__title {
+  margin-bottom: 28px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-size: 21px;
+    font-size: 30px;
     line-height: 26px;
   }
 
@@ -127,4 +142,8 @@
   text-transform: uppercase;
 
   color: $darkGray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
 }

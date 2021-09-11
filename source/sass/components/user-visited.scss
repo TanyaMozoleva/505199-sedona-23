@@ -5,8 +5,13 @@
 }
 
 .user-visited__list {
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
-    padding-left: 100px;
+    padding-left: 95px;
+    padding-right: 64px;
+    padding-top: 41px;
+    text-align: left;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -15,18 +20,29 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding-top: 39px;
+    padding-left: 0;
   }
 }
 
 
 .user-visited__item {
   margin-bottom: 54px;
+
+  &:last-child {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .user-visited__label span {
-  padding-left: 68px;
+  padding-left: 76px;
 
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 
@@ -39,12 +55,12 @@
   &::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: 0;
+    top: -16px;
+    left: -2px;
 
-    width: 46px;
-    height: 46px;
-    border-radius: 3px;
+    width: 55px;
+    height: 55px;
+    border-radius: 5px;
 
     background-color: $lightGray;
   }

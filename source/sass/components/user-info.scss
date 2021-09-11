@@ -6,11 +6,20 @@
   }
 }
 
+.user-info__list {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    padding-top: 33px;
+  }
+}
+
 .user-info__item {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .user-info__label {
+  padding-right: 7px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
@@ -19,14 +28,14 @@
   color: $darkGray;
 
   @media (min-width: $tablet-width) {
-    padding-left: 57px;
+    padding-left: 7px;
   }
 }
 
 .user-info__input {
   width: 192px;
   height: 58px;
-  padding-top: 18px;
+  padding-top: 23px;
   padding-bottom: 14px;
   padding-left: 21px;
   cursor: pointer;
@@ -62,6 +71,8 @@
 
   @media (min-width: $tablet-width) {
     width: 180px;
+    padding-left: 25px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {

@@ -1,7 +1,7 @@
 body {
   font-family: "Pt Sans", "Arial", sans-serif;
   min-width: 320px;
-  background-color: $gray6;
+  background-color: $gray-back;
 }
 
 ul {
@@ -23,6 +23,10 @@ textarea {
   width: 100%;
   margin: 0 auto;
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    box-shadow: 0 5px 15px 0 $white-back;
+  }
 }
 
 .visually-hidden {
@@ -49,5 +53,13 @@ textarea {
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+  }
+}
+
+.big-hidden {
+  display: inline-block;
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

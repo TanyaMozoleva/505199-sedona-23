@@ -7,7 +7,9 @@
 .user-message__textarea {
   width: 279px;
   height: 160px;
-  margin-bottom: 51px;
+  margin-bottom: 49px;
+  padding-top: 13px;
+  padding-left: 18px;
 
   border: none;
 
@@ -18,8 +20,15 @@
   background-color: $lightGray;
   color: $black;
 
+  &::placeholder {
+    color: $black;
+    opacity: 1;
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 55px;
+    margin-top: 39px;
+    padding-top: 18px;
   }
 }

@@ -37,8 +37,8 @@
         <section class="intro">
           <div class="intro__inner">
             <picture class="intro__picture">
-              <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+              <!-- <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg"> -->
               <img class="intro__img" src="img/sedona.svg" alt="Седона">
             </picture>
           </div>
@@ -76,13 +76,13 @@
                 <h2 class="form__subtitle form__subtitle--special"><span>Контактная информация:</span></h2>
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
-                    <label class="user-contacts__label" for="tel">Контактный телефон*:</label>
+                    <label class="user-contacts__label" for="tel"><span class="big-hidden">Контактный</span><span>телефон*:</span></label>
                     <input class="user-contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
                     <div class="user-contacts__icon user-contacts__icon--tel" href=""><span class="visually-hidden">tel</span></div>
                   </li>
                   <li class="user-contacts__item">
                     <label class="user-contacts__label" for="email">Электронная почта*:</label>
-                    <input class="user-contacts__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                    <input class=" user-contacts__input user-contacts__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
                     <div class="user-contacts__icon user-contacts__icon--email" href=""><span class="visually-hidden">email</span></div>
                   </li>
                 </ul>
