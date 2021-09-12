@@ -29,3 +29,181 @@
     }
   }
 }
+
+.brief-reasons__description {
+  min-height: 191px;
+  padding-top: 55px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 44px;
+    padding-left: 32px;
+    min-height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 47px;
+    padding-right: 62px;
+    padding-bottom: 57px;
+    padding-left: 63px;
+  }
+}
+
+.brief-reasons__title {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+    padding-right: 35px;
+  }
+}
+
+.brief-reasons__number {
+  margin: 0;
+  margin-bottom: 19px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.brief-reasons__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.brief-reasons__item .brief-reasons__description {
+  background-color: $gray;
+  color: $black;
+  padding-top: 26px;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
+  }
+}
+
+.brief-reasons__item--1 .brief-reasons__description {
+  @media (min-width: $tablet-width) {
+    padding-right: 33px;
+    padding-left: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 55px;
+  }
+}
+
+.brief-reasons__item--1 .brief-reasons__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 58px;
+    padding-right: 52px;
+  }
+}
+
+.brief-reasons__item--2 .brief-reasons__description {
+  padding-left: 41px;
+  padding-right: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 65px;
+    padding-left: 62px;
+  }
+}
+
+.brief-reasons__item--2 .brief-reasons__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 49px;
+    padding-right: 52px;
+  }
+}
+
+.brief-reasons__item--2 .brief-reasons__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 5px;
+    padding-right: 9px;
+  }
+}
+
+.brief-reasons__item--3 .brief-reasons__description {
+  padding-left: 23px;
+  padding-right: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 41px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+    padding-left: 57px;
+  }
+}
+
+.brief-reasons__item--3 .brief-reasons__title {
+  @media (min-width: $tablet-width) {
+    padding-left: 11px;
+    padding-right: 10px;
+    padding-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 68px;
+    padding-right: 66px;
+  }
+}
+
+.brief-reasons__item--3 .brief-reasons__text {
+  padding-left: 17px;
+  padding-right: 11px;
+}
