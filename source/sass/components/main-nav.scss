@@ -1,0 +1,237 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__list {
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: $blue;
+
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.main-nav__item {
+  width: 100%;
+  min-height: 55px;
+  padding-top: 9px;
+
+
+  &:hover {
+    background-color: $blue-hover;
+  }
+
+  &:active {
+    background-color: $blue-active;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    background-color: $white;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}
+
+.main-nav__item--1,
+.main-nav__item--2 {
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}
+
+.main-nav__item--3,
+.main-nav__item--4 {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.main-nav__item--1 {
+  // box-shadow: 0 1px 0 0 $black-opacity, inset 0 2px 0 0 $white-opacity;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 47px;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 89px;
+    padding-top: 13px;
+  }
+}
+
+.main-nav__item--2 {
+  box-shadow: 0 1px 0 0 $black-opacity, inset 0 2px 0 0 $white-opacity;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -10px;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 18px;
+    padding-top: 13px;
+  }
+}
+
+.main-nav__item--3 {
+  box-shadow: 0 1px 0 0 $black-opacity, inset 0 2px 0 0 $white-opacity;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 16px;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 23px;
+    padding-top: 13px;
+  }
+}
+
+.main-nav__item--4 {
+  box-shadow: 0 1px 0 0 $black-opacity, inset 0 2px 0 0 $white-opacity;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 7px;
+    background: $blue linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 29px;
+    background: none;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 73px;
+    padding-top: 13px;
+  }
+}
+
+
+.main-nav__link {
+  color: $white;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 14px;
+    line-height: 26px;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &:active {
+      color: $black;
+      opacity: 30%;
+    }
+  }
+}
+
+.main-nav__link--current {
+  @media (min-width: $tablet-width) {
+    color: $brown;
+  }
+}
+
+.main-nav__item .main-nav__link {
+  &:active {
+    color: $black;
+    opacity: 30%;
+  }
+}
+
+.main-nav__toggle {
+  @include btn-reset;
+
+  position: absolute;
+  top: 32px;
+  right: 10px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  width: 23px;
+  height: 4px;
+  background-color: $blue;
+  box-shadow: 0 8px 0 0 $blue, 0 16px 0 0 $blue;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  opacity: 60%;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 30%;
+}
+
+.main-nav--opend .main-nav__toggle {
+  top: 10px;
+  right: 0;
+  z-index: 100;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 19px;
+    width: 23px;
+    height: 4px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+}

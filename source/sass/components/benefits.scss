@@ -1,0 +1,228 @@
+.benefits {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 20px;
+
+  min-height: 416px;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    min-height: 330px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.benefits__item {
+  padding-left: 50px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding-top: 111px;
+    padding-left: 0;
+  }
+}
+
+.benefits__item--accommodation {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 40px;
+      left: 69px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 139px;
+      top: 39px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+
+.benefits__item--presents {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 5px;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 39px;
+      left: 96px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 167px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+}
+
+.benefits__item--food {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -2px;
+    width: 40px;
+    height: 38px;
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 41px;
+      left: 81px;
+      width: 75px;
+      height: 75px;
+      background-size: 75px 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 154px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+  }
+}
+
+.benefits__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 22px;
+  }
+}
+
+.benefits__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $darkGray;
+}
+
+.benefits__item--accommodation .benefits__title {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-left: 20px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 20px;
+    padding-right: 48px;
+  }
+}
+
+.benefits__item--presents .benefits__title {
+  padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-left: 70px;
+    padding-right: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 70px;
+    padding-right: 44px;
+  }
+}
+
+.benefits__item--food .benefits__title {
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+    padding-left: 46px;
+    padding-right: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 45px;
+    padding-right: 48px;
+  }
+}
+
+.benefits__item--accommodation .benefits__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    padding-left: 28px;
+    padding-right: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 2px;
+    padding-left: 26px;
+    padding-right: 56px;
+  }
+}
+
+.benefits__item--food .benefits__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+    padding-right: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    padding-left: 46px;
+    padding-right: 46px;
+  }
+}
+
+.benefits__item--presents .benefits__text {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 1px;
+    padding-left: 78px;
+    padding-right: 78px;
+  }
+}

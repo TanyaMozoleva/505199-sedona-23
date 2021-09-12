@@ -1,1 +1,41 @@
-// Начните писать стили здесь
+// Global
+@import "global/normalize";
+@import "utils/fonts.scss";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
+@import "global/global.scss";
+@import "layout/page.scss";
+
+//Components
+@import "components/brief-reasons.scss";
+@import "components/benefits.scss";
+@import "components/button.scss";
+@import "components/copyright.scss";
+@import "components/gallery.scss";
+@import "components/gallery-card.scss";
+@import "components/intro.scss";
+@import "components/logo.scss";
+@import "components/main-nav.scss";
+@import "components/map.scss";
+@import "components/modal.scss";
+@import "components/offers.scss";
+@import "components/promo.scss";
+@import "components/reasons.scss";
+@import "components/reason-card.scss";
+@import "components/reviews.scss";
+@import "components/social.scss";
+@import "components/toolbar.scss";
+@import "components/user-info.scss";
+@import "components/user-contacts.scss";
+@import "components/user-opinion.scss";
+@import "components/user-visited.scss";
+@import "components/user-message.scss";
+@import "components/video.scss";
+
+
+//Layout
+
+@import "layout/form.scss";
+@import "layout/page-body.scss";
+@import "layout/page-header.scss";
+@import "layout/page-footer.scss";

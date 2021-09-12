@@ -1,0 +1,82 @@
+.toolbar {
+  width: 100%;
+  height: 111px;
+  position: absolute;
+  bottom: -66px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    height: 93px;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.toolbar__timeline {
+  min-height: 45px;
+  min-width: 280px;
+  background-color: $black;
+  opacity: 60%;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 92px;
+    padding-top: 45px;
+  }
+}
+
+.toolbar__time-scale {
+  width: 258px;
+  height: 3px;
+  background-color: $white;
+  opacity: 20%;
+  padding-left: 22px;
+
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 389px;
+
+    left: 93px;
+    top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 540px;
+
+    left: 93px;
+  }
+}
+
+.toolbar__time-toggle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  top: 18px;
+  left: 56px;
+
+  @media (min-width: $tablet-width) {
+    left: 204px;
+    top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 204px;
+  }
+}
+
+.toolbar__controls {
+  min-height: 66px;
+  min-width: 280px;
+  background-color: $lightGray;
+
+  @media (min-width: $tablet-width) {
+    background-color: $black;
+    min-height: 0;
+  }
+}

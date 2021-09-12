@@ -1,0 +1,31 @@
+.brief-reasons {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.brief-reasons__item--1,
+.brief-reasons__item--2 {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+    background-color: $gray4;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}

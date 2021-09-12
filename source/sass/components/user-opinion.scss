@@ -1,0 +1,83 @@
+.user-opinion {
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-bottom: 15px;
+  }
+}
+
+.user-opinion__list {
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+  }
+}
+
+.user-opinion__item {
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 49px;
+    }
+  }
+}
+
+.user-opinion__label span {
+  padding-left: 75px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $black;
+
+  cursor: pointer;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+
+    background-color: $lightGray;
+  }
+}
+
+.user-opinion__label span:hover::before {
+  background-color: $gray5;
+}
+
+.user-opinion__label span:active::before {
+  background-color: $gray7;
+}
+
+.user-opinion__input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 15px;
+
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+
+  background-color: $darkGray;
+}
+
+.user-opinion__input:checked + span:hover::after {
+  background-color: $darkGray;
+}
+
+.user-opinion__input:checked + span:active::after {
+  background-color: $darkGray;
+  opacity: 30%;
+}

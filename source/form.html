@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Седона/Отзывы</title>
+    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body class="page-body">
+    <div class="container">
+
+      <header class="page-header">
+        <a class="page-header__logo logo" href="#" aria-label="Логотип">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
+            <img class="logo__img" src="img/logotype-mobile.svg" alt="Логотип">
+          </picture>
+        </a>
+
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__dropdown">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
+          </div>
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
+            <li class="main-nav__item main-nav__item--3"><a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item main-nav__item--4"><a class="main-nav__link" href="https://htmlacademy.ru">HTMLAcademy</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="page-main">
+
+        <section class="intro">
+          <div class="intro__inner">
+            <picture class="intro__picture">
+              <img class="intro__img" src="img/sedona.svg" alt="Седона">
+            </picture>
+          </div>
+          <div class="intro__description">
+            <h2 class="intro__title">Оставьте свой отзыв</h2>
+            <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+
+        </section>
+
+        <section class="reviews">
+          <div class="reviews__inner">
+            <h1 class="visually-hidden">Форма отзыва</h1>
+            <form class="reviews__form form" action="https://echo.htmlacademy.ru" method="POST">
+
+              <fieldset class="form__user-info user-info">
+                <h2 class="form__subtitle">Представьтесь:</h2>
+                <ul class="user-info__list">
+                  <li class="user-info__item">
+                    <label class="user-info__label" for="first-name">Имя*:</label>
+                    <input class="user-info__input user-info__input--large" type="text" id="first-name" name="first-name" placeholder="Петр" required>
+                  </li>
+                  <li class="user-info__item">
+                    <label class="user-info__label" for="surname">Фамилия*:</label>
+                    <input class="user-info__input" type="text" id="surname" name="surname" placeholder="Иванов" required>
+                  </li>
+                  <li class="user-info__item">
+                    <label class="user-info__label" for="middle-name">Отчество*:</label>
+                    <input class="user-info__input" type="text" id="middle-name" name="middle-name" placeholder="Александрович" required>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form__user-contacts user-contacts">
+                <h2 class="form__subtitle form__subtitle--special"><span>Контактная информация:</span></h2>
+                <ul class="user-contacts__list">
+                  <li class="user-contacts__item">
+                    <label class="user-contacts__label" for="tel"><span class="big-hidden">Контактный</span><span>телефон*:</span></label>
+                    <input class="user-contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
+                    <div class="user-contacts__icon user-contacts__icon--tel" href=""><span class="visually-hidden">tel</span></div>
+                  </li>
+                  <li class="user-contacts__item">
+                    <label class="user-contacts__label" for="email">Электронная почта*:</label>
+                    <input class=" user-contacts__input user-contacts__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                    <div class="user-contacts__icon user-contacts__icon--email" href=""><span class="visually-hidden">email</span></div>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form__user-opinion user-opinion">
+                <h2 class="form__subtitle"><span>Ваше общее впечатление:</span></h2>
+                <ul class="user-opinion__list">
+                  <li class="user-opinion__item">
+                    <label class="user-opinion__label">
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="positive" checked>
+                      <span>Скорее положительное</span>
+                    </label>
+                  </li>
+                  <li class="user-opinion__item">
+                    <label class="user-opinion__label">
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="negative">
+                      <span>Скорее отрицательное</span>
+                    </label>
+                  </li>
+                  <li class="user-opinion__item">
+                    <label class="user-opinion__label">
+                      <input class="user-opinion__input visually-hidden" type="radio" name="user's-opinion" value="indecisive">
+                      <span>Затрудняюсь ответить</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form__user-visited user-visited">
+                <h2 class="form__subtitle form__subtitle--special"><span>Посещенные достопримечательности:</span></h2>
+                <ul class="user-visited__list">
+                  <li class="user-visited__item">
+                    <label class="user-visited__label">
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Мост Дьявола" checked>
+                      <span>Мост Дьявола</span>
+                    </label>
+                  </li>
+                  <li class="user-visited__item">
+                    <label class="user-visited__label">
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Гора-Колокол" checked>
+                      <span>Гора-Колокол</span>
+                    </label>
+                  </li>
+                  <li class="user-visited__item">
+                    <label class="user-visited__label">
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Слайд-парк" checked>
+                      <span>Слайд-парк</span>
+                    </label>
+                  </li>
+                  <li class="user-visited__item">
+                    <label class="user-visited__label">
+                      <input class="user-visited__input visually-hidden" type="checkbox" name="Посещенные достопримечательности" value="Красные скалы">
+                      <span>Красные скалы</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form__user-message user-message">
+                <h2 class="form__subtitle form__subtitle--special"><span>Опишите свои эмоции:</span></h2>
+                <label>
+                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"></textarea>
+                </label>
+              </fieldset>
+
+              <button class="form__button button" type="submit" aria-label="Отправить отзыв">Отправить отзыв</button>
+              <span class="form__note">* — обязательные поля</span>
+
+            </form>
+          </div>
+        </section>
+
+        <div class="modal modal--failure">
+          <h2 class="modal__title">Что-то пошло<br class="small-hidden"> не так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <button class="modal__button modal__button--failure button" type="button" aria-label="Ok">Ok</button>
+        </div>
+        <div class="modal modal--success">
+          <div class="modal__inner">
+            <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+            <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
+          <div class="modal__controls">
+            <button class="modal__button modal__button--success button" type="button" aria-label="Закрыть окно">Закрыть окно</button>
+          </div>
+        </div>
+      </main>
+
+
+
+      <footer class="page-footer">
+        <div class="page-footer__inner">
+          <a class="page-footer__tag" href="#">#visitsedona</a>
+
+          <section class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="#" aria-label="Твиттер">
+                  <svg class="social__icon" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#" aria-label="Фейсбук">
+                  <svg class="social__icon" width="9" height="19" viewBox="0 0 9 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.3 3.4C7.1 3.4 7.9 3.4 8.7 3.4C8.7 2.3 8.7 1.2 8.7 0C7.7 0 6.8 0 5.8 0C2.7 0.2 1.5 2.4 1.9 6.1H0V9.6H2C2 12.7 2 15.8 2 18.9C3.3 18.9 4.6 18.9 5.8 18.9C5.8 15.8 5.8 12.7 5.8 9.6H8.7V6.1H5.8C5.8 5.1 5.8 3.7 6.3 3.4Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="#" aria-label="Ютуб">
+                  <svg class="social__icon" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z" fill="currentColor"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="copyright__icon" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="currentColor"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+  </body>
+</html>

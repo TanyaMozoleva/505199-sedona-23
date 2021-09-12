@@ -1,0 +1,22 @@
+.page-header {
+  min-height: 56px;
+  background-color: $white;
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 51px);
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    z-index: 4;
+    left: calc(50% - 52px);
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 4;
+    left: calc(50% - 94px);
+  }
+}

@@ -1,0 +1,12 @@
+.button {
+  @include btn-reset;
+
+  background-color: $blue;
+  color: $white;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
