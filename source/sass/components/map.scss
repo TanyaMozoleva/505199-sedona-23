@@ -28,4 +28,12 @@
 .map__img {
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.map__iframe {
+  position: relative;
+  z-index: 300;
 }
