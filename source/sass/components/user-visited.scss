@@ -4,6 +4,13 @@
   }
 }
 
+.user-visited__text {
+  @media (min-width: $tablet-width) {
+    width: 308px;
+    padding: 0 20px;
+  }
+}
+
 .user-visited__list {
   padding-top: 20px;
 

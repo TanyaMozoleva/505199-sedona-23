@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона/Каталог</title>
-    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="build/favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="container">
 
       <header class="page-header">
-        <a class="page-header__logo logo" href="#" aria-label="Логотип">
+        <a class="page-header__logo logo" href="index.html" aria-label="Логотип">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
@@ -22,7 +22,7 @@
           </picture>
         </a>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opend main-nav--nojs">
 
           <div class="main-nav__dropdown">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
@@ -38,6 +38,8 @@
       </header>
 
       <main class="page-main">
+        <h1 class="visually-hidden">Фото и видео Седоны</h1>
+
         <section class="intro">
           <div class="intro__inner intro__inner--special">
             <picture class="intro__picture">
@@ -49,7 +51,6 @@
             <p class="intro__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
           </div>
         </section>
-        <h1 class="visually-hidden">Фото и видео Седоны</h1>
 
         <section class="gallery">
           <div class="gallery__inner">

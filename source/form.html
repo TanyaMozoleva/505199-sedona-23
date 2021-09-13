@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона/Отзывы</title>
-    <link rel="icon" href="source/favicon.ico">
+    <link rel="icon" href="build/favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
     <div class="container">
 
       <header class="page-header">
-        <a class="page-header__logo logo" href="#" aria-label="Логотип">
+        <a class="page-header__logo logo" href="index.html" aria-label="Логотип">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" >
@@ -22,7 +22,7 @@
           </picture>
         </a>
 
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="main-nav main-nav--opend main-nav--nojs">
           <div class="main-nav__dropdown">
             <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
           </div>
@@ -37,6 +37,7 @@
       </header>
 
       <main class="page-main">
+        <h1 class="visually-hidden">Отзыв о Седоне</h1>
 
         <section class="intro">
           <div class="intro__inner">
@@ -48,12 +49,10 @@
             <h2 class="intro__title">Оставьте свой отзыв</h2>
             <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           </div>
-
         </section>
 
         <section class="reviews">
           <div class="reviews__inner">
-            <h1 class="visually-hidden">Форма отзыва</h1>
             <form class="reviews__form form" action="https://echo.htmlacademy.ru" method="POST">
 
               <fieldset class="form__user-info user-info">
@@ -80,12 +79,12 @@
                   <li class="user-contacts__item">
                     <label class="user-contacts__label" for="tel"><span class="big-hidden">Контактный</span><span>телефон*:</span></label>
                     <input class="user-contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
-                    <div class="user-contacts__icon user-contacts__icon--tel" href=""><span class="visually-hidden">tel</span></div>
+                    <div class="user-contacts__icon user-contacts__icon--tel"><span class="visually-hidden">tel</span></div>
                   </li>
                   <li class="user-contacts__item">
                     <label class="user-contacts__label" for="email">Электронная почта*:</label>
                     <input class=" user-contacts__input user-contacts__input--email" type="email" id="email" name="email" placeholder="Введите e-mail" required>
-                    <div class="user-contacts__icon user-contacts__icon--email" href=""><span class="visually-hidden">email</span></div>
+                    <div class="user-contacts__icon user-contacts__icon--email"><span class="visually-hidden">email</span></div>
                   </li>
                 </ul>
               </fieldset>
@@ -115,7 +114,7 @@
               </fieldset>
 
               <fieldset class="form__user-visited user-visited">
-                <h2 class="form__subtitle form__subtitle--special"><span>Посещенные достопримечательности:</span></h2>
+                <h2 class="form__subtitle form__subtitle--special"><span class="user-visited__text">Посещенные достопримечательности:</span></h2>
                 <ul class="user-visited__list">
                   <li class="user-visited__item">
                     <label class="user-visited__label">
@@ -147,7 +146,7 @@
               <fieldset class="form__user-message user-message">
                 <h2 class="form__subtitle form__subtitle--special"><span>Опишите свои эмоции:</span></h2>
                 <label>
-                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"></textarea>
+                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"><span class="visually-hidden">Опишите подробно все свои восторги</span></textarea>
                 </label>
               </fieldset>
 

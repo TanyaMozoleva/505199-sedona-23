@@ -39,7 +39,7 @@
 
 .form__user-contacts {
   border: 0;
-  padding: o;
+  padding: 0;
   position: relative;
 
   &::before {
@@ -199,13 +199,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 1px 50px;
-  }
-}
-
-.form__user-visited .form__subtitle--special span {
-  @media (min-width: $tablet-width) {
-    width: 308px;
-    padding: 0 20px;
   }
 }
 
