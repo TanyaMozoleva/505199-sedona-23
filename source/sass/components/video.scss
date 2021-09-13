@@ -64,6 +64,10 @@
     padding-top: 33px;
     padding-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 79px;
+  }
 }
 
 .video__content {

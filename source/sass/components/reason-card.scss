@@ -45,6 +45,11 @@
   @media (min-width: $tablet-width) {
     padding-top: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 49px;
+    padding-left: 66px;
+  }
 }
 
 .reason-card--second {
@@ -79,6 +84,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 81px;
     padding-right: 85px;
+    padding-top: 49px;
   }
 }
 

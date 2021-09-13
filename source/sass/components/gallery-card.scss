@@ -104,10 +104,13 @@
   }
 }
 
-.gallery__item--2 .gallery-card__button,
-.gallery__item--4 .gallery-card__button {
+.gallery__item--2 .gallery-card__button {
   @media (min-width: $tablet-width) {
     padding-right: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 6px;
   }
 }
 
@@ -117,14 +120,56 @@
   }
 }
 
+.gallery__item--4 .gallery-card__button {
+  @media (min-width: $tablet-width) {
+    padding-right: 4px;
+  }
+}
+
 .gallery__item--1 .gallery-card__number {
+  padding-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding-right: 0;
   }
 }
 
+.gallery__item--2 .gallery-card__number {
+  padding-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 8px;
+  }
+}
+
 .gallery__item--3 .gallery-card__number {
+  padding-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding-right: 16px;
+  }
+}
+
+.gallery__item--4 .gallery-card__number {
+  padding-left: 6px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 9px;
   }
 }

@@ -73,6 +73,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 11px;
+    padding-left: 24px;
   }
 }
 
@@ -118,4 +119,8 @@
     right: 0;
     top: 10px;
   }
+}
+
+.user-contacts__text {
+  padding-right: 3px;
 }
