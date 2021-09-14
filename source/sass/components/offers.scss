@@ -34,8 +34,9 @@
 }
 
 .offers__text {
+  margin: 0;
   margin-bottom: 34px;
-  padding-top: 5px;
+  padding-top: 22px;
 
 
   font-weight: 400;
@@ -50,11 +51,11 @@
     padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 44px;
-    padding-top: 16px;
+    padding-top: 29px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 17px;
+    padding-top: 32px;
     margin-bottom: 48px;
   }
 }

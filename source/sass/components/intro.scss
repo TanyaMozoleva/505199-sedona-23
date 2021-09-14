@@ -156,3 +156,18 @@
     padding-top: 5px;
   }
 }
+
+.intro__title--special {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.intro__text--special {
+  margin: 0;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 13px;
+  }
+}

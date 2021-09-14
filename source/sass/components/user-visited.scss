@@ -4,12 +4,27 @@
   }
 }
 
+// .user-visited__text {
+//   @media (min-width: $tablet-width) {
+//     width: 308px;
+//     padding: 0 20px;
+//   }
+// }
+
 .user-visited__text {
   @media (min-width: $tablet-width) {
-    width: 308px;
-    padding: 0 20px;
+    position: relative;
+    z-index: 12;
+    background-color: $white;
+    display: inline-block;
+    width: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 50px;
   }
 }
+
 
 .user-visited__list {
   padding-top: 20px;
@@ -22,11 +37,15 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    row-gap: 7px;
+    column-gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 0;
+    column-gap: 50px;
 
     padding-top: 39px;
     padding-left: 0;
@@ -44,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding-left: 26px;
+    padding-left: 0;
   }
 }
 

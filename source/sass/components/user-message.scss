@@ -7,7 +7,7 @@
 .user-message__textarea {
   width: 279px;
   height: 160px;
-  margin-bottom: 49px;
+  margin-bottom: 48px;
   padding-top: 13px;
   padding-left: 18px;
 
@@ -27,8 +27,14 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     margin-top: 39px;
     padding-top: 18px;
+  }
+}
+
+.user-message__text {
+  @media (min-width: $tablet-width) {
+    width: 400px;
   }
 }

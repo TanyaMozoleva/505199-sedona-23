@@ -11,6 +11,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 3px;
+  }
 }
 
 .user-opinion__item {

@@ -22,12 +22,13 @@
           </picture>
         </a>
 
-        <nav class="main-nav main-nav--opend main-nav--nojs">
-          <div class="main-nav__dropdown">
-            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"><span class="visually-hidden">Открыть меню</span></button>
-          </div>
+        <nav class="main-nav main-nav--nojs">
 
-          <ul class="main-nav__list">
+          <button class="main-nav__toggle main-nav__toggle--nojs" type="button" aria-label="Открыть меню">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+          <ul class="main-nav__list main-nav__list--nojs">
             <li class="main-nav__item main-nav__item--1"><a class="main-nav__link" href="index.html">Главная</a></li>
             <li class="main-nav__item main-nav__item--2"><a class="main-nav__link" href="catalog.html">Фото и видео</a></li>
             <li class="main-nav__item main-nav__item--3"><a class="main-nav__link main-nav__link--current" href="form.html">Форма отзыва</a></li>
@@ -77,7 +78,7 @@
                 <h2 class="form__subtitle form__subtitle--special"><span>Контактная информация:</span></h2>
                 <ul class="user-contacts__list">
                   <li class="user-contacts__item">
-                    <label class="user-contacts__label" for="tel"><span class="big-hidden">Контактный</span><span>телефон*:</span></label>
+                    <label class="user-contacts__label" for="tel"><span class="big-hidden user-contacts__text">Контактный</span><span>телефон*:</span></label>
                     <input class="user-contacts__input" type="tel" id="tel" name="tel" placeholder="Введите телефон" required>
                     <div class="user-contacts__icon user-contacts__icon--tel"><span class="visually-hidden">tel</span></div>
                   </li>
@@ -114,7 +115,7 @@
               </fieldset>
 
               <fieldset class="form__user-visited user-visited">
-                <h2 class="form__subtitle form__subtitle--special"><span class="user-visited__text">Посещенные достопримечательности:</span></h2>
+                <h2 class="form__subtitle form__subtitle--special-visited"><span class="user-visited__text">Посещенные достопримечательности:</span></h2>
                 <ul class="user-visited__list">
                   <li class="user-visited__item">
                     <label class="user-visited__label">
@@ -144,9 +145,10 @@
               </fieldset>
 
               <fieldset class="form__user-message user-message">
-                <h2 class="form__subtitle form__subtitle--special"><span>Опишите свои эмоции:</span></h2>
+                <h2 class="form__subtitle form__subtitle--special"><span class="user-message__text">Опишите свои эмоции:</span></h2>
                 <label>
-                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"><span class="visually-hidden">Опишите подробно все свои восторги</span></textarea>
+                  <span class="visually-hidden">Опишите подробно все свои восторги</span>
+                  <textarea class="user-message__textarea" aria-label="Отзыв пользователя" placeholder="Опишите подробно все свои восторги"></textarea>
                 </label>
               </fieldset>
 
@@ -215,5 +217,6 @@
 
       </footer>
     </div>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
