@@ -22,5 +22,3 @@ menuBtn.classList.remove("main-nav__toggle--nojs");
     menuBtn.classList.remove("main-nav__toggle--opened");
     menuList.classList.remove("main-nav__list--opened");
   }
-
-
