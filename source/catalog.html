@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Седона/Каталог</title>
+
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsans.woff" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+
     <link rel="icon" href="build/favicon.ico">
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/apple.png">
@@ -56,88 +62,112 @@
           <div class="gallery__inner">
             <ul class="gallery__list">
               <li class="gallery__item gallery__item--1">
-                <article class="gallery-card">
-                  <picture class="gallery-card__picture">
-                    <source media="(min-width: 1200px)" srcset="img/vastness-desktop.jpg 1x, img/vastness-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/vastness-tablet.jpg 1x, img/vastness-tablet@2x.jpg 2x">
-                    <img class="gallery-card__img" src="img/vastness-mobile.jpg" srcset="img/vastness-mobile@2x.jpg 2x" alt="Неродные просторы">
-                  </picture>
-                  <div class="gallery-card__inner">
-                    <div class="gallery-card__description">
-                      <h2 class="gallery-card__title">Неродные просторы</h2>
-                      <p class="gallery-card__text">Автор фото: Борис</p>
+                <a href="#">
+                  <article class="gallery-card">
+                    <picture class="gallery-card__picture">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/vastness-desktop.webp 1x, img/vastness-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/vastness-tablet.webp 1x, img/vastness-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/vastness-mobile.webp 1x, img/vastness-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1200px)" srcset="img/vastness-desktop.jpg 1x, img/vastness-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/vastness-tablet.jpg 1x, img/vastness-tablet@2x.jpg 2x">
+                      <img class="gallery-card__img" src="img/vastness-mobile.jpg" srcset="img/vastness-mobile@2x.jpg 2x" alt="Неродные просторы">
+                    </picture>
+                    <div class="gallery-card__inner">
+                      <div class="gallery-card__description">
+                        <h2 class="gallery-card__title">Неродные просторы</h2>
+                        <p class="gallery-card__text">Автор фото: Борис</p>
+                      </div>
+                      <div class="gallery-card__likes">
+                        <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
+                          <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
+                        </button>
+                        <span class="gallery-card__number">1350</span>
+                      </div>
                     </div>
-                    <div class="gallery-card__likes">
-                      <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
-                        <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
-                      </button>
-                      <span class="gallery-card__number">1350</span>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </a>
               </li>
               <li class="gallery__item gallery__item--2">
-                <article class="gallery-card">
-                  <picture class="gallery-card__picture">
-                    <source media="(min-width: 1200px)" srcset="img/greenery-desktop.jpg 1x, img/greenery-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/greenery-tablet.jpg 1x, img/greenery-tablet@2x.jpg 2x">
-                    <img class="gallery-card__img" src="img/greenery-mobile.jpg" srcset="img/greenery-mobile@2x.jpg 2x" alt="Местная растительность">
-                  </picture>
-                  <div class="gallery-card__inner">
-                    <div class="gallery-card__description">
-                      <h2 class="gallery-card__title">Местная растительность</h2>
-                      <p class="gallery-card__text">Автор фото: Сергей</p>
+                <a href="#">
+                  <article class="gallery-card">
+                    <picture class="gallery-card__picture">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/greenery-desktop.webp 1x, img/greenery-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/greenery-tablet.webp 1x, img/greenery-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/greenery-mobile.webp 1x, img/greenery-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1200px)" srcset="img/greenery-desktop.jpg 1x, img/greenery-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/greenery-tablet.jpg 1x, img/greenery-tablet@2x.jpg 2x">
+                      <img class="gallery-card__img" src="img/greenery-mobile.jpg" srcset="img/greenery-mobile@2x.jpg 2x" alt="Местная растительность">
+                    </picture>
+                    <div class="gallery-card__inner">
+                      <div class="gallery-card__description">
+                        <h2 class="gallery-card__title">Местная растительность</h2>
+                        <p class="gallery-card__text">Автор фото: Сергей</p>
+                      </div>
+                      <div class="gallery-card__likes">
+                        <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
+                          <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
+                        </button>
+                        <span class="gallery-card__number">143</span>
+                      </div>
                     </div>
-                    <div class="gallery-card__likes">
-                      <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
-                        <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
-                      </button>
-                      <span class="gallery-card__number">143</span>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </a>
               </li>
               <li class="gallery__item gallery__item--3">
-                <article class="gallery-card">
-                  <picture class="gallery-card__picture">
-                    <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
-                    <img class="gallery-card__img" src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Север">
-                  </picture>
-                  <div class="gallery-card__inner">
-                    <div class="gallery-card__description">
-                      <h2 class="gallery-card__title">Дорога на Север</h2>
-                      <p class="gallery-card__text">Автор фото: Петр</p>
+                <a href="#">
+                  <article class="gallery-card">
+                    <picture class="gallery-card__picture">
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-desktop.webp 1x, img/road-desktop@2x.webp 2x">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/road-tablet.webp 1x, img/road-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/road-mobile.webp 1x, img/road-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1200px)" srcset="img/road-desktop.jpg 1x, img/road-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/road-tablet.jpg 1x, img/road-tablet@2x.jpg 2x">
+                      <img class="gallery-card__img" src="img/road-mobile.jpg" srcset="img/road-mobile@2x.jpg 2x" alt="Дорога на Север">
+                    </picture>
+                    <div class="gallery-card__inner">
+                      <div class="gallery-card__description">
+                        <h2 class="gallery-card__title">Дорога на Север</h2>
+                        <p class="gallery-card__text">Автор фото: Петр</p>
+                      </div>
+                      <div class="gallery-card__likes">
+                        <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
+                          <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
+                        </button>
+                        <span class="gallery-card__number">96</span>
+                      </div>
                     </div>
-                    <div class="gallery-card__likes">
-                      <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
-                        <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
-                      </button>
-                      <span class="gallery-card__number">96</span>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </a>
               </li>
               <li class="gallery__item gallery__item--4">
-                <article class="gallery-card">
-                  <picture class="gallery-card__picture">
-                    <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
-                    <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
-                    <img class="gallery-card__img" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
-                  </picture>
-                  <div class="gallery-card__inner">
-                    <div class="gallery-card__description">
-                      <h2 class="gallery-card__title">Мост Дьявола</h2>
-                      <p class="gallery-card__text">Автор фото: Антон</p>
+                <a href="#">
+                  <article class="gallery-card">
+                    <picture class="gallery-card__picture">
+                      <source media="(min-width: 1200px)" srcset="img/bridge-desktop.webp 1x, img/bridge-desktop@2x.webp 2x">
+                      <source media="(min-width: 768px)" srcset="img/bridge-tablet.webp 1x, img/bridge-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/bridge-mobile.webp 1x, img/bridge-mobile@2x.webp 2x">
+
+                      <source media="(min-width: 1200px)" srcset="img/bridge-desktop.jpg 1x, img/bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/bridge-tablet.jpg 1x, img/bridge-tablet@2x.jpg 2x">
+                      <img class="gallery-card__img" src="img/bridge-mobile.jpg" srcset="img/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+                    </picture>
+                    <div class="gallery-card__inner">
+                      <div class="gallery-card__description">
+                        <h2 class="gallery-card__title">Мост Дьявола</h2>
+                        <p class="gallery-card__text">Автор фото: Антон</p>
+                      </div>
+                      <div class="gallery-card__likes">
+                        <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
+                          <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
+                        </button>
+                        <span class="gallery-card__number">254</span>
+                      </div>
                     </div>
-                    <div class="gallery-card__likes">
-                      <button class="gallery-card__button" type="button" aria-label="Нажми, если понравилась картинка">
-                        <svg class="gallery-card__icon" width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.964 3.78l-.628 3.045-.627 2.625h9.096v2.205L17.773 18.9h-9.41V8.4l4.6-4.62zM2.09 10.5v8.4-8.4zM13.8 0L6.9 6.93c-.418.315-.627.84-.627 1.47v10.5c0 1.155.94 2.1 2.09 2.1h9.41c.836 0 1.568-.525 1.881-1.26l3.137-7.455c.104-.21.104-.525.104-.735v-2.1H23c0-1.155-.94-2.1-2.09-2.1h-6.587l1.045-4.83v-.315c0-.42-.209-.84-.418-1.155L13.8 0zM4.182 8.4H0V21h4.182V8.4z" fill="currentColor"/></svg>
-                      </button>
-                      <span class="gallery-card__number">254</span>
-                    </div>
-                  </div>
-                </article>
+                  </article>
+                </a>
               </li>
             </ul>
           </div>
@@ -150,6 +180,10 @@
           </div>
           <div class="video__content">
             <picture class="video__picture">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+
               <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img class="video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Указатель въезда в Седону">
@@ -223,7 +257,7 @@
 
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Академии">
               <svg class="copyright__icon" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0zM25 12.1L13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9zM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8zM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9z" fill="currentColor"/></svg>
             </a>
           </div>
