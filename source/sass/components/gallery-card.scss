@@ -12,6 +12,8 @@
 }
 
 .gallery-card__inner {
+  color: $black;
+
   @media (min-width: $tablet-width) {
     background-color: $lightGray;
     display: flex;

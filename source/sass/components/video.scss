@@ -14,17 +14,15 @@
 }
 
 .video__description {
-  padding-left: 22px;
-  padding-right: 20px;
+  width: 266px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding-left: 161px;
-    padding-right: 162px;
+    width: 445px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 377px;
-    padding-right: 378px;
+    width: 445px;
   }
 }
 
