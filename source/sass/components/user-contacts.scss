@@ -37,7 +37,7 @@
 }
 
 .user-contacts__input {
-  width: 100%;
+  width: 93%;
   height: 58px;
   margin-top: 11px;
   padding-top: 18px;
@@ -86,8 +86,12 @@
   display: flex;
 
   position: absolute;
-  right: 0;
+  right: 18px;
   top: 26px;
+
+  @media (min-width: $tablet-width) {
+    right: -1px;
+  }
 
   @media (min-width: $desktop-width) {
     right: 80px;

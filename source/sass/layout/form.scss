@@ -14,7 +14,7 @@
 
   &::before {
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: $gray5;
     position: absolute;
@@ -44,7 +44,7 @@
 
   &::before {
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: $gray5;
     position: absolute;
@@ -70,7 +70,7 @@
 
   &::before {
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: $gray5;
     position: absolute;
@@ -102,7 +102,7 @@
 
   &::before {
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: $gray5;
     position: absolute;
@@ -129,7 +129,7 @@
 
   &::before {
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     background-color: $gray5;
     position: absolute;
@@ -161,6 +161,7 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -211,6 +212,8 @@
   margin: 0;
   padding-top: 14px;
   padding-bottom: 17px;
+  padding-left: 70px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     text-align: left;

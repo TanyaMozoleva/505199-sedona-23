@@ -113,6 +113,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 43px;
+    padding-bottom: 62px;
   }
 }
 
@@ -123,8 +124,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 60px;
-    padding-left: 55px;
+    padding-left: 42px;
+    padding-right: 43px;
   }
 }
 
@@ -136,8 +137,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 58px;
-    padding-right: 52px;
+    padding-left: 99px;
+    padding-right: 99px;
+  }
+}
+
+.brief-reasons__item--1 .brief-reasons__text {
+  @media (min-width: $tablet-width) {
+    padding-left: 7px;
+    padding-right: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 17px;
+    padding-right: 16px;
   }
 }
 
@@ -151,8 +164,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 65px;
-    padding-left: 62px;
+    padding-right: 54px;
+    padding-left: 54px;
   }
 }
 
@@ -164,8 +177,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 49px;
-    padding-right: 52px;
+    padding-left: 97px;
+    padding-right: 97px;
   }
 }
 
@@ -173,6 +186,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 5px;
     padding-right: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
+    padding-right: 18px;
   }
 }
 
@@ -186,8 +204,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 60px;
-    padding-left: 57px;
+    padding-right: 55px;
+    padding-left: 55px;
   }
 }
 
@@ -199,12 +217,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 68px;
-    padding-right: 66px;
+    padding-left: 96px;
+    padding-right: 96px;
   }
 }
 
 .brief-reasons__item--3 .brief-reasons__text {
   padding-left: 17px;
   padding-right: 11px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
