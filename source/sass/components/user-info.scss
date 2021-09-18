@@ -36,16 +36,18 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 79px;
+    padding-right: 12px;
   }
 }
 
 .user-info__input {
+  width: 71%;
   height: 58px;
   padding-top: 23px;
   padding-bottom: 14px;
   padding-left: 25px;
 
-  flex-grow: 1;
+  // flex-grow: 1;
   cursor: pointer;
 
   border: none;
@@ -86,4 +88,8 @@
   @media (min-width: $desktop-width) {
     width: 314px;
   }
+}
+
+.user-info__input--large {
+  width: 75%;
 }
