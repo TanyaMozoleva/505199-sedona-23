@@ -12,6 +12,8 @@
 // }
 
 .user-visited__text {
+  padding-left: 58px;
+
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 12;
@@ -53,17 +55,34 @@
   }
 }
 
+.user-visited__label {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
 
 .user-visited__item {
   margin-bottom: 54px;
 
   &:last-child {
     margin-bottom: 45px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 45px;
     padding-left: 0;
+
+    &:nth-child(4n+2) {
+      padding-left: 10px;
+    }
+
+    &:nth-child(4n+3) {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -83,12 +102,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: -16px;
+    top: 50%;
     left: -2px;
 
     width: 55px;
     height: 55px;
     border-radius: 5px;
+    transform: translateY(-50%);
 
     background-color: $lightGray;
   }
@@ -105,11 +125,12 @@
 .user-visited__input:checked + span::after {
   content: "";
   position: absolute;
-  top: 4px;
+  top: 50%;
   left: 15px;
 
   width: 23px;
   height: 16px;
+  transform: translateY(-50%);
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -117,4 +138,8 @@
 
 .user-visited__input:checked + span:active::after {
   opacity: 30%;
+}
+
+.user-visited__input:focus + span {
+  opacity: 0.3;
 }

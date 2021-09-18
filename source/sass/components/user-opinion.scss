@@ -85,3 +85,7 @@
   background-color: $darkGray;
   opacity: 30%;
 }
+
+.user-opinion__input:focus + span {
+  opacity: 0.3;
+}

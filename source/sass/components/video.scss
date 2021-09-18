@@ -8,8 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 28px;
-    margin-bottom: 109px;
+    padding-top: 52px;
+    margin-bottom: 82px;
   }
 }
 
@@ -22,13 +22,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 445px;
+    width: 450px;
   }
 }
 
 .video__title {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
 
   font-weight: 700;
   font-size: 18px;
@@ -59,11 +59,12 @@
   color: $darkGray;
 
   @media (min-width: $tablet-width) {
-    padding-top: 33px;
-    padding-bottom: 80px;
+    padding-top: 30px;
+    padding-bottom: 82px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 34px;
     padding-bottom: 79px;
   }
 }
@@ -103,15 +104,11 @@
 .video__reload {
   @include btn-reset;
 
-  margin-left: 15px;
-  margin-right: 120px;
-  margin-top: 23px;
+  position: absolute;
+  top: 64px;
+  left: 38px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 0;
-    margin-left: 0;
-    margin-top: 0;
-    position: absolute;
     top: 35px;
     left: 89px;
   }
@@ -125,38 +122,36 @@
 .video__subtitles {
   @include btn-reset;
 
-  margin-top: 23px;
-  margin-right: 14px;
+  position: absolute;
+  top: 65px;
+  left: 188px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 0;
-    margin-top: 0;
-    position: absolute;
     top: 35px;
-    right: 146px;
+    left: 578px;
   }
 
   @media (min-width: $desktop-width) {
     top: 32px;
-    right: 287px;
+    left: 868px;
   }
 }
 
 .video__full-screen {
   @include btn-reset;
 
-  margin-top: 23px;
+  position: absolute;
+  top: 65px;
+  left: 250px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    position: absolute;
     top: 35px;
-    right: 95px;
+    left: 641px;
   }
 
   @media (min-width: $desktop-width) {
     top: 32px;
-    right: 236px;
+    left: 930px;
   }
 }
 

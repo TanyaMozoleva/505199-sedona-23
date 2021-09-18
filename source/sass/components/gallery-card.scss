@@ -6,26 +6,35 @@
   }
 }
 
+.gallery-card a {
+  display: block;
+}
+
 .gallery-card__img {
   display: block;
   width: 100%;
 }
 
 .gallery-card__inner {
+  padding: 9px 30px 5px 0;
   color: $black;
 
+
   @media (min-width: $tablet-width) {
+    padding: 15px 30px 18px 20px;
+    min-height: 80px;
     background-color: $lightGray;
     display: flex;
     justify-content: space-between;
 
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0;
-    padding-bottom: 18px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    // padding-top: 0;
+    // padding-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 15px 30px 18px 20px;
     background-color: $black-opacity3;
     color: $white;
 
@@ -36,10 +45,33 @@
   }
 }
 
+.gallery-card--feature .gallery-card__inner {
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 21px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 21px;
+  }
+}
+
+.gallery-card--serpantine-road .gallery-card__inner {
+  @media (min-width: $tablet-width) {
+    padding-right: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 37px;
+  }
+}
+
 .gallery-card__title {
   margin: 0;
-  padding-top: 10px;
-  margin-bottom: 0;
+  // padding-top: 6px;
+  // margin-bottom: 0;
 
   font-weight: 700;
   font-size: 14px;
@@ -47,13 +79,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding-top: 14px;
+    // padding-top: 14px;
+    padding-top: 0;
   }
 }
 
 .gallery-card__text {
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 7px;
 
   font-weight: 400;
   font-size: 14px;
@@ -69,20 +102,30 @@
   }
 }
 
+.gallery-card--feature .gallery-card__text {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .gallery-card__number {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 10px;
-    padding-top: 10px;
+    // padding-right: 10px;
+    // padding-top: 10px;
   }
 }
 
 .gallery-card__likes {
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    // padding-top: 20px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -90,11 +133,14 @@
   @include btn-reset;
 
   padding-left: 0;
-  padding-right: 3px;
+  margin-right: 3px;
+  // padding-right: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 5px;
-    padding-top: 7px;
+    // padding-right: 5px;
+    // padding-top: 7px;
+    padding: 0;
+    margin-right: 9px;
   }
 }
 
